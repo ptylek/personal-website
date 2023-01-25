@@ -1,6 +1,7 @@
 # Personal website build with Nuxt
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[Nuxt Content](https://content.nuxtjs.org) module acts as a file-based CMS for Nuxt application powered by Markdown and Vue components.
 
 ## Setup
 
