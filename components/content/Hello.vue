@@ -6,20 +6,22 @@
 
 <style>
 .hello {
-    font-size: clamp(5rem, 3.6577rem + 6.7114vw, 6.875rem);
+    font-size: clamp(6.25rem, 4.9077rem + 6.7114vw, 8.125rem);
     color: var(--color-primary);
-    font-weight: 700;
     white-space: nowrap;
-    margin-bottom: 25px;
+    margin-bottom: clamp(1.5625rem, -0.0035rem + 7.83vw, 3.75rem);
 }
 
 .hello span {
-    font-size: clamp(4.625rem, 3.6407rem + 4.9217vw, 6rem);
+    font-size: clamp(3.75rem, 2.6314rem + 5.5928vw, 5.3125rem);
     animation-name: wave-animation;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;
+    position: relative;
+    top: -10px;
+    left: -20px;
 }
 
 @keyframes wave-animation {

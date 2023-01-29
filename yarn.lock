@@ -684,6 +684,14 @@
     pathe "^1.0.0"
     ufo "^1.0.0"
 
+"@nuxtjs/robots@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/robots/-/robots-3.0.0.tgz#057f0a68d847f22c36b4e574b456173e3f3d80b0"
+  integrity sha512-qsHGW1KXBvV5Kq7u3huPnFCUTbHS4Fk8Za2mNPgmUXcwLgp3exvhPtdZfIdjrCF/aZk3A8OZONNmGghs6CecBA==
+  dependencies:
+    "@nuxt/kit" "^3.0.0"
+    h3 "^1.0.1"
+
 "@rollup/plugin-alias@^4.0.2":
   version "4.0.3"
   resolved "https://registry.npmjs.org/@rollup/plugin-alias/-/plugin-alias-4.0.3.tgz"
@@ -4162,6 +4170,11 @@ nuxi@3.0.0:
   integrity sha512-VWh1kKFffxD2yadZWcQSd6eTf9okXRr7d3HsjLiI4B3Q1/8iKdIUiodGo7X71OZ+gPVnX6Oh/XFzcb7mr+8TbQ==
   optionalDependencies:
     fsevents "~2.3.2"
+
+nuxt-font-loader@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/nuxt-font-loader/-/nuxt-font-loader-2.2.2.tgz#a2c6e9fc98e597e5b2b3e1f8245d18d33f44dc5c"
+  integrity sha512-6H7CS9t5OMVsCfzxDTZadOxbj9wpsUZoknvlp/7+UuwI83pZbdm6dDbztAkGkKHBDNcvXrBGokQuJJl2VhekMg==
 
 nuxt@^3.0.0:
   version "3.0.0"

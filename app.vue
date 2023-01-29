@@ -2,13 +2,18 @@
   <NuxtPage/>
 </template>
 
-
 <style>
 :root {
-    --color-primary: #5740CE;
-    --color-text-light: #333333;
-    --color-text: var(--color-text-light);
+  --page-max-width: 767px;
+  --color-primary: #5740CE;
+  --color-text-light: #333333;
+  --color-text: var(--color-text-light);
+  --color-background: #ffffff;
+}
 
-    font-family: "Quicksand";
+body {
+  margin: 0;
+  background: linear-gradient(var(--color-background) 0 50%, var(--color-primary) 51% 100%);
+  font-family: "Reenie Beanie", "Noto Emoji";
 }
 </style>

@@ -12,10 +12,12 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.3.0",
-    "nuxt": "^3.0.0"
+    "nuxt": "^3.0.0",
+    "nuxt-font-loader": "^2.2.2"
   },
   "dependencies": {
     "@nuxtjs/fontaine": "^0.2.4",
+    "@nuxtjs/robots": "^3.0.0",
     "@vueuse/motion": "^2.0.0-beta.26"
   }
 }
