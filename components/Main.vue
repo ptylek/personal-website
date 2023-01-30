@@ -22,7 +22,7 @@ const { data:error } = await useAsyncData('error-data', () => queryContent('/_no
     box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.15);
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .main {
         margin-bottom: 500px;
     }

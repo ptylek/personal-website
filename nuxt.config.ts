@@ -32,7 +32,8 @@ export default defineNuxtConfig({
         '@vueuse/motion/nuxt',
         '@nuxtjs/fontaine',
         'nuxt-font-loader',
-        '@nuxtjs/robots'
+        '@nuxtjs/robots',
+        '@nuxt/image-edge'
     ],
     fontLoader: {
         local: [

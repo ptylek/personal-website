@@ -32,7 +32,7 @@ defineProps({
     white-space: nowrap;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .paragraph {
         text-align: justify;
     }

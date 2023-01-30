@@ -43,7 +43,7 @@ const currentYear = new Date().getFullYear()
     text-align: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .footer {
         height: 450px;
     }
@@ -77,7 +77,7 @@ const currentYear = new Date().getFullYear()
     padding: 0;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .footer_links ul {
         float: right;
     }
