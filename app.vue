@@ -6,9 +6,11 @@
 :root {
   --page-max-width: 767px;
   --color-primary: #5740CE;
+  --color-secondary: #FFFFFF;
   --color-text-light: #333333;
+  --color-text-dark: var(--color-secondary);
   --color-text: var(--color-text-light);
-  --color-background: #ffffff;
+  --color-background: var(--color-secondary);
 }
 
 body {

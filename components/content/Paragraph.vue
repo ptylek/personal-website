@@ -1,5 +1,5 @@
 <template>
-    <p v-if="props.isStatic === 'true'" class="paragraph">
+    <p v-if="isStatic === 'true'" class="paragraph">
         <ContentSlot :use="$slots.default" unwrap="p"/>
     </p>
     <p v-else class="paragraph" v-motion-slide-visible-once-bottom :delay="delay">
@@ -8,13 +8,16 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
     isStatic: {
         type: String,
         default: ''
+    },
+    delay: {
+        type: String,
+        default: '200'
     }
 })
-const delay = 200
 </script>
 
 <style>
@@ -25,13 +28,13 @@ const delay = 200
     line-height: 1.6;
 }
 
+.paragraph span {
+    white-space: nowrap;
+}
+
 @media screen and (min-width: 767px) {
     .paragraph {
         text-align: justify;
     }
-}
-
-.paragraph span {
-    white-space: nowrap;
 }
 </style>
