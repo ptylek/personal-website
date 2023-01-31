@@ -33,7 +33,9 @@ export default defineNuxtConfig({
         '@nuxtjs/fontaine',
         'nuxt-font-loader',
         '@nuxtjs/robots',
-        '@nuxt/image-edge'
+        '@nuxt/image-edge',
+        '@nuxtjs/color-mode',
+        'nuxt-icons'
     ],
     fontLoader: {
         local: [
@@ -48,5 +50,6 @@ export default defineNuxtConfig({
                 display: 'swap'
             }
         ]
-    }
+    },
+    css: ['@/assets/css/global.css']
 })

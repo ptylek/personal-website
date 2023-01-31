@@ -22,7 +22,7 @@
 .avatar_circle {
     width: 230px;
     height: 230px;
-    background-color: var(--color-background);
+    background-color: var(--color-secondary);
     border-radius: 50%;
 }
 
@@ -35,5 +35,4 @@
     max-width: 180px;
     max-height: 185px;
 }
-
 </style>

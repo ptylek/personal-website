@@ -1,0 +1,21 @@
+:root {
+    --page-max-width: 767px;
+    --color-primary: #5740CE;
+    --color-secondary: #FFFFFF;
+    --color-dark: #222222;
+    --color-text-light: var(--color-dark);
+    --color-text-dark: var(--color-secondary);
+    --color-text: var(--color-text-light);
+    --color-background: var(--color-secondary);
+}
+
+.dark-mode {
+    --color-text: var(--color-text-dark);
+    --color-background: var(--color-dark);
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(var(--color-background) 0 50%, var(--color-primary) 51% 100%);
+    font-family: "Reenie Beanie", "Noto Emoji";
+}

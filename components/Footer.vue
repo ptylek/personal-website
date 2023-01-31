@@ -45,7 +45,7 @@ const currentYear = new Date().getFullYear()
 
 @media screen and (min-width: 768px) {
     .footer {
-        height: 450px;
+        height: 500px;
     }
 
     .footer_content {
@@ -67,6 +67,7 @@ const currentYear = new Date().getFullYear()
 
 .footer_copyright {
     text-align: center;
+    color: var(--color-secondary);
 }
 </style>
 
@@ -90,7 +91,7 @@ const currentYear = new Date().getFullYear()
 .footer_links a {
     text-decoration: none;
     box-shadow: inset 0 0 0 0 var(--color-secondary);
-    color: var(--color-text-dark);
+    color: var(--color-secondary);
     padding: 0 .5rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
@@ -98,6 +99,5 @@ const currentYear = new Date().getFullYear()
 .footer_links a:hover {
     box-shadow: inset 420px 0 0 0 var(--color-secondary);
     color: var(--color-primary);
-
 }
 </style>

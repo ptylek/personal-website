@@ -15,11 +15,11 @@ const { data:error } = await useAsyncData('error-data', () => queryContent('/_no
 <style scoped>
 .main {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     background: var(--color-background);
     margin-bottom: 650px;
     min-height: 100vh;
-    box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 768px) {
@@ -28,6 +28,7 @@ const { data:error } = await useAsyncData('error-data', () => queryContent('/_no
     }
 }
 </style>
+
 <style>
 .main_content {
     padding: clamp(2.5rem, -2.8691rem + 26.8456vw, 10rem) 20px clamp(2.5rem, 0.7103rem + 8.9485vw, 5rem);
