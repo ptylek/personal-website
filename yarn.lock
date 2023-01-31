@@ -615,16 +615,15 @@
     fastq "^1.6.0"
 
 "@nuxt/content@^2.3.0":
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-2.4.2.tgz#d297385aa2a060de22e070f902390833f2a202ed"
-  integrity sha512-Nz2ZcC7R505UY5NQN+WE1pZ4ie8PBBr12qJHFAZqhWCXenzsdb87p48fvr6Zhlj8CyCTQqWg0B2fs7Lyg/CKwg==
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@nuxt/content/-/content-2.4.3.tgz#db3bbd35b87b9e23518eef19cc063a200d86062a"
+  integrity sha512-HRx4+9RK2bgtBObcgfrWg/MS0G+mgq87tAA6Q6vjusDpVGE4DhnPN/9nkEMEyfebPZ22iI7z51GN2Od/SnABHA==
   dependencies:
     "@nuxt/kit" "3.1.1"
     consola "^2.15.3"
     defu "^6.1.2"
     destr "^1.2.2"
     detab "^3.0.2"
-    html-tags "^3.2.0"
     json5 "^2.2.3"
     knitwork "^1.0.0"
     listhen "^1.0.2"
@@ -638,7 +637,7 @@
     rehype-slug "^5.1.0"
     rehype-sort-attribute-values "^4.0.0"
     rehype-sort-attributes "^4.0.0"
-    remark-emoji "^3.0.2"
+    remark-emoji "3.0.2"
     remark-gfm "^3.0.1"
     remark-mdc "^1.1.3"
     remark-parse "^10.0.1"
@@ -662,9 +661,9 @@
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
 "@nuxt/image-edge@^1.0.0-27913696.5d122a3":
-  version "1.0.0-27913696.5d122a3"
-  resolved "https://registry.yarnpkg.com/@nuxt/image-edge/-/image-edge-1.0.0-27913696.5d122a3.tgz#6ce3739b7cbdbba08ed4ec8f23c3687a826d63ef"
-  integrity sha512-vD+ANKTUNOJz35nF+++eylkBNHOSx+Yg4Wdnw7drr/UKOR3WzH7TytsoExIrl8yLpdQU7aKUxRT5s5wrI7jmMQ==
+  version "1.0.0-27919678.2f5b64b"
+  resolved "https://registry.yarnpkg.com/@nuxt/image-edge/-/image-edge-1.0.0-27919678.2f5b64b.tgz#a9b084cf2ad5eafff2e069b85e856a9dd1a876f3"
+  integrity sha512-MvQ8NJyOTO4n8x+KU+Fyn7H+FegAb+ZN+7cwTAquOy41ev+c1mKn2EYGjkrYEoY/jKMaKSgK/jMtQjOeOhiQXA==
   dependencies:
     "@nuxt/kit" "^3.1.1"
     consola "^2.15.3"
@@ -790,9 +789,9 @@
     std-env "^3.3.1"
 
 "@nuxt/ui-templates@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@nuxt/ui-templates/-/ui-templates-1.1.0.tgz#ac2ae0cca5d78cc9cc61d369676b88a0fd60ce97"
-  integrity sha512-KffiTNdVaZlkx0tgwopmy627WQclWO0kqFD1R646wawDbNlWkpmwj5qI5qoh2Rx13/O+KkYdc28H3JsQdQmXJw==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@nuxt/ui-templates/-/ui-templates-1.1.1.tgz#db3539e3c9391c217510def5242cf74739e685ea"
+  integrity sha512-PjVETP7+iZXAs5Q8O4ivl4t6qjWZMZqwiTVogUXHoHGZZcw7GZW3u3tzfYfE1HbzyYJfr236IXqQ02MeR8Fz2w==
 
 "@nuxt/vite-builder@3.1.1":
   version "3.1.1"
@@ -2177,7 +2176,7 @@ emoji-regex@^9.2.2:
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
   integrity sha512-L18DaJsXSUk2+42pv8mLs5jJT2hqFkFE4j21wOmgbUqsZ2hL72NsUU785g9RXgo3s0ZNgVl42TiHp3ZtOv/Vyg==
 
-emoticon@^4.0.1:
+emoticon@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/emoticon/-/emoticon-4.0.1.tgz#2d2bbbf231ce3a5909e185bbb64a9da703a1e749"
   integrity sha512-dqx7eA9YaqyvYtUhJwT4rC1HIp82j5ybS1/vQ42ur+jBe17dJMwZE4+gvL1XadSFfxaPFFGt3Xsw+Y8akThDlw==
@@ -2872,7 +2871,7 @@ hookable@^5.4.2:
   resolved "https://registry.yarnpkg.com/hookable/-/hookable-5.4.2.tgz#6a1d3c4b3cb5b4262f99b3070ce0ee92c9c78049"
   integrity sha512-6rOvaUiNKy9lET1X0ECnyZ5O5kSV0PJbtA5yZUgdEF7fGJEVwSLSislltyt7nFwVVALYHQJtfGeAR2Y0A0uJkg==
 
-html-tags@^3.1.0, html-tags@^3.2.0:
+html-tags@^3.1.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-3.2.0.tgz#dbb3518d20b726524e4dd43de397eb0a95726961"
   integrity sha512-vy7ClnArOZwCnqZgvv+ddgHgJiAFXe3Ge9ML5/mBctVJoUoYPCdxVucOywjDARn6CVoh3dRSFdPHy2sX80L0Wg==
@@ -3095,9 +3094,9 @@ is-buffer@^2.0.0:
   integrity sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==
 
 is-builtin-module@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-3.2.0.tgz#bb0310dfe881f144ca83f30100ceb10cf58835e0"
-  integrity sha512-phDA4oSGt7vl1n5tJvTWooWWAsXLY+2xCnxNqvKhGEzujg+A43wPlPOyDg3C8XQHN+6k/JTQWJ/j0dQh/qr+Hw==
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/is-builtin-module/-/is-builtin-module-3.2.1.tgz#f03271717d8654cfcaf07ab0463faa3571581169"
+  integrity sha512-BSLE3HnV2syZ0FK0iMA/yUGplUeMmNz4AW5fnTunbCIqZi4vG3WjJT9FHMy5D69xmAYBHXQhJdALdpwVxV501A==
   dependencies:
     builtin-modules "^3.3.0"
 
@@ -3553,7 +3552,7 @@ mdast-util-definitions@^5.0.0:
     "@types/unist" "^2.0.0"
     unist-util-visit "^4.0.0"
 
-mdast-util-find-and-replace@^2.0.0, mdast-util-find-and-replace@^2.2.2:
+mdast-util-find-and-replace@^2.0.0:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/mdast-util-find-and-replace/-/mdast-util-find-and-replace-2.2.2.tgz#cc2b774f7f3630da4bd592f61966fecade8b99b1"
   integrity sha512-MTtdFRz/eMDHXzeK6W3dO7mXUlF82Gom4y0oOgvHhh/HXZAGvIQDUvQ0SuUx+j2tv44b8xTHOm8K/9OoRFnXKw==
@@ -4231,9 +4230,9 @@ node-fetch@2.6.7:
     whatwg-url "^5.0.0"
 
 node-fetch@^2.6.7:
-  version "2.6.8"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.8.tgz#a68d30b162bc1d8fd71a367e81b997e1f4d4937e"
-  integrity sha512-RZ6dBYuj8dRSfxpUSu+NsdF1dpPpluJxwOp+6IoDp/sH2QNDSvurYsAa+F1WxY2RjA1iP93xhcsUoYbF2XBqVg==
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.9.tgz#7c7f744b5cc6eb5fd404e0c7a9fec630a55657e6"
+  integrity sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==
   dependencies:
     whatwg-url "^5.0.0"
 
@@ -4257,9 +4256,9 @@ node-gyp-build@^4.2.2:
   integrity sha512-NTZVKn9IylLwUzaKjkas1e4u2DLNcV4rdYagA4PWdPwW87Bi7z+BznyKSRwS/761tV/lzCGXplWsiaMjLqP2zQ==
 
 node-releases@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.8.tgz#0f349cdc8fcfa39a92ac0be9bc48b7706292b9ae"
-  integrity sha512-dFSmB8fFHEH/s81Xi+Y/15DQY6VHW81nXRj86EMSL3lmuTmK1e+aT4wrFCkTbm+gSwkw4KpX+rT/pMM2c1mF+A==
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.9.tgz#fe66405285382b0c4ac6bcfbfbe7e8a510650b4d"
+  integrity sha512-2xfmOrRkGogbTK9R6Leda0DGiXeY3p2NJpy4+gNCffdUvV6mdEJnaDEic1i3Ec2djAo8jWYoJMR5PB0MSMpxUA==
 
 nopt@^5.0.0:
   version "5.0.0"
@@ -5048,14 +5047,14 @@ rehype-sort-attributes@^4.0.0:
     unified "^10.0.0"
     unist-util-visit "^4.0.0"
 
-remark-emoji@^3.0.2:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/remark-emoji/-/remark-emoji-3.1.0.tgz#aef28ee28d078ed1d5a9ab811ad44b695797183d"
-  integrity sha512-KmjkU04niXFMn/H+SsPAGnXhsuq0gT/neIg1KRw8vUKZ/PNxpLDGmwVzx4a14OOd5GJ8rnCdh6DKXqHySkUHAQ==
+remark-emoji@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/remark-emoji/-/remark-emoji-3.0.2.tgz#786e88af1ecae682d74d7e1219989f34708205da"
+  integrity sha512-hEgxEv2sBtvhT3tNG/tQeeFY3EbslftaOoG14dDZndLo25fWJ6Fbg4ukFbIotOWWrfXyASjXjyHT+6n366k3mg==
   dependencies:
-    emoticon "^4.0.1"
-    mdast-util-find-and-replace "^2.2.2"
+    emoticon "^4.0.0"
     node-emoji "^1.11.0"
+    unist-util-visit "^4.1.0"
 
 remark-gfm@^3.0.1:
   version "3.0.1"
@@ -5865,7 +5864,7 @@ unist-util-visit-parents@^5.0.0, unist-util-visit-parents@^5.1.1:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
 
-unist-util-visit@^4.0.0, unist-util-visit@^4.1.1, unist-util-visit@^4.1.2:
+unist-util-visit@^4.0.0, unist-util-visit@^4.1.0, unist-util-visit@^4.1.1, unist-util-visit@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-4.1.2.tgz#125a42d1eb876283715a3cb5cceaa531828c72e2"
   integrity sha512-MSd8OUGISqHdVvfY9TPhyK2VdUrPgxkUtWSuMHF6XAAFuL4LokseigBnZtPnJMu+FbynTkFNnFlyjxpVKujMRg==
