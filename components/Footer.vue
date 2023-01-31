@@ -6,7 +6,7 @@
             </div>
             <ContentRendererMarkdown v-if="links" class="footer_links" :value="links" />
         </div>
-        <div class="footer_copyright">Copyright {{ currentYear }} Paweł Tylek</div>
+        <div class="footer_copyright">Made with ❤️<br/>Copyright {{ currentYear }} Paweł Tylek </div>
     </footer>
 </template>
 
@@ -45,7 +45,7 @@ const currentYear = new Date().getFullYear()
 
 @media screen and (min-width: 768px) {
     .footer {
-        height: 500px;
+        height: 450px;
     }
 
     .footer_content {
@@ -84,7 +84,7 @@ const currentYear = new Date().getFullYear()
     }
 }
 
-.footer_links li {
+.footer_links li:not(:last-child) {
     margin: 0 0 20px;
 }
 

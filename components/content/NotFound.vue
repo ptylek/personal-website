@@ -17,6 +17,7 @@
 .not-found_text {
     text-align: center;
     font-size: 60px;
+    color: var(--color-text);
 }
 
 .not-found_text strong {

@@ -24,7 +24,7 @@ const { data:error } = await useAsyncData('error-data', () => queryContent('/_no
 
 @media screen and (min-width: 768px) {
     .main {
-        margin-bottom: 500px;
+        margin-bottom: 450px;
     }
 }
 </style>

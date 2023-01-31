@@ -31,7 +31,8 @@ const setMode = () => {
 .mode-switcher_icon {
     color: var(--color-secondary);
     font-size: 20px;
-    margin-bottom: -0.125em;
+    margin-bottom: -0.0625em;
+    display: block;
 }
 
 @media screen and (min-width: 768px) {
