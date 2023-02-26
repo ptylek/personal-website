@@ -29,7 +29,6 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxt/content',
-        '@vueuse/motion/nuxt',
         '@nuxtjs/fontaine',
         'nuxt-font-loader',
         '@nuxtjs/robots',

@@ -1,7 +1,7 @@
 ::Hello
 Hi! [:wave:]
 ::
-::Paragraph{isStatic="true"}
+::Paragraph
 Welcome to my personal website! My name is Pawel, I am a frontend developer from Krakow, currently working as one of the cyber sailors at Creativestyle :pirate_flag::heart:
 ::
 ::Paragraph
