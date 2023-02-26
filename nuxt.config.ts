@@ -44,7 +44,7 @@ export default defineNuxtConfig({
                 display: 'swap'
             },
             {
-                src: '/fonts/noto-emoji-v34-emoji-regular.woff2',
+                src: '/fonts/noto-emoji-custom.woff2',
                 family: 'Noto Emoji',
                 display: 'swap'
             }

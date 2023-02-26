@@ -26,3 +26,11 @@ Generate output for static hosting
 ```bash
 yarn generate
 ```
+
+## Tools
+
+Generate emoji font that only includes unicodes provided in emoji.js
+
+```bash
+yarn build:emoji
+```
