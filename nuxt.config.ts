@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         '@nuxtjs/fontaine',
         'nuxt-font-loader',
         '@nuxtjs/robots',
-        '@nuxt/image-edge',
+        '@nuxt/image',
         '@nuxtjs/color-mode',
         'nuxt-icons'
     ],

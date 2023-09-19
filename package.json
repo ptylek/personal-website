@@ -12,16 +12,16 @@
     "build:emoji": "node emoji.js"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.3.0",
-    "@nuxt/image-edge": "^1.0.0-27913696.5d122a3",
-    "@nuxtjs/color-mode": "^3.2.0",
-    "fontmin": "^0.9.9",
-    "nuxt": "^3.1.0",
-    "nuxt-font-loader": "^2.2.2"
+    "@nuxt/content": "^2.8.2",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "fontmin": "^1.0.1",
+    "nuxt": "^3.7.3",
+    "nuxt-font-loader": "^2.3.4"
   },
   "dependencies": {
-    "@nuxtjs/fontaine": "^0.2.4",
+    "@nuxt/image": "^1.0.0-rc.2",
+    "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/robots": "^3.0.0",
-    "nuxt-icons": "^3.1.0"
+    "nuxt-icons": "^3.2.1"
   }
 }
