@@ -2,21 +2,25 @@ const fs = require('fs');
 const { promisify } = require('util');
 const fontmin = require('fontmin');
 const unicodes = [
-  'U+1F44B', // 👋
-  'U+2620', // ☠️
-  'U+2764', // ❤️
-  'U+1F6CD', // 🛍️
-  'U+1F454', // 👔
-  'U+1F4BB', // 💻
-  'U+1F396', // 🎖️
-  'U+1F393', // 🎓
-  'U+1F3C3', // 🏃
-  'U+1F6B4', // 🚴
-  'U+1F3CB', // 🏋️
-  'U+1F3AE', // 🎮
-  'U+1F3B6', // 🎶
-  'U+1F648', // 🙈
-  'U+1F64B', // 🙋
+  '1F44B', // 👋
+  '2620', // ☠️
+  '2764', // ❤️
+  '1F6CD', // 🛍️
+  '1F454', // 👔
+  '1F4BB', // 💻
+  '1F396', // 🎖️
+  '1F393', // 🎓
+  '1F3C3', // 🏃
+  '1F6B4', // 🚴
+  '1F3CB', // 🏋️
+  '1F3AE', // 🎮
+  '1F3B6', // 🎶
+  '1F648', // 🙈
+  '1F64B', // 🙋
+  '1F680', // 🚀
+  '1F422', // 🐢
+  '1F43F', // 🐿️
+  '1F61F' // 😟
 ];
 
 const fontPath = 'public/fonts/original/noto-emoji.ttf';
@@ -27,7 +31,7 @@ async function buildEmojiFont() {
   const fontminInstance = new fontmin()
     .src(fontBuffer)
     .use(fontmin.glyph({ 
-      text: unicodes.map(u => String.fromCodePoint(...u.split(' ').map(x => parseInt(x.slice(2), 16)))).join(''), 
+      text: unicodes.map(u => String.fromCodePoint(parseInt(u, 16))).join(''), 
       hinting: false 
     }))
     .use(fontmin.ttf2woff2());
@@ -38,3 +42,4 @@ async function buildEmojiFont() {
 buildEmojiFont()
   .then(() => console.log('Emoji font build complete'))
   .catch(err => console.error('Emoji font build failed:', err));
+  

@@ -1,8 +1,7 @@
 ---
-title: 'Frontend Developer Pawel Tylek - Page not found'
+title: 'Pawel Tylek Frontend Developer - Page not found'
 ---
-::NotFound
-**Oops!**
+
+[Oops 😟]{.font-bold .text-4xl .md:text-5xl .text-purple .mb-12}
+
 Page you are looking for was not found
-[:worried:]
-::

@@ -1,21 +1,26 @@
-:root {
-    --page-max-width: 767px;
-    --color-primary: #5740CE;
-    --color-secondary: #FFFFFF;
-    --color-dark: #222222;
-    --color-text-light: var(--color-dark);
-    --color-text-dark: var(--color-secondary);
-    --color-text: var(--color-text-light);
-    --color-background: var(--color-secondary);
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font-Face */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito'), url('/fonts/nunito-v26-latin-regular.woff2') format('woff2');
 }
 
-.dark-mode {
-    --color-text: var(--color-text-dark);
-    --color-background: var(--color-dark);
+@font-face {
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Emoji'), url('/fonts/noto-emoji-custom.woff2') format('woff2');
 }
 
+/* Body */
 body {
-    margin: 0;
-    background: linear-gradient(var(--color-background) 0 50%, var(--color-primary) 51% 100%);
-    font-family: "Reenie Beanie", "Noto Emoji";
+  font-family: 'Nunito', 'Noto Emoji';
 }

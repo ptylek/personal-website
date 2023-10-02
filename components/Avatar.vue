@@ -1,38 +1,14 @@
 <template>
-    <div class="avatar">
-        <div class="avatar_circle"></div>
-        <nuxt-img 
-            src="/images/avatar-transparent.png" 
-            format="webp" 
-            class="avatar_image" 
-            alt="Avatar" 
-            loading="lazy"
-            width="360" 
-            height="370"
-        />
-    </div>
+  <div class="relative inline-flex items-center mb-4 md:mb-0 md:flex-35">
+    <div class="w-[230px] h-[230px] bg-white rounded-full"></div>
+    <nuxt-img
+      src="/images/avatar-transparent.png"
+      format="webp"
+      class="absolute bottom-0 left-1/2 transform -translate-x-1/2 max-w-[180px] max-h-[185px]"
+      alt="Avatar"
+      loading="lazy"
+      width="360"
+      height="370"
+    />
+  </div>
 </template>
-
-<style scoped>
-.avatar {
-    position: relative;
-    display: inline-flex;
-}
-
-.avatar_circle {
-    width: 230px;
-    height: 230px;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
-}
-
-.avatar_image {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 6px 4px -4px black;
-    max-width: 180px;
-    max-height: 185px;
-}
-</style>

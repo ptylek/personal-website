@@ -1,13 +1,6 @@
 <template>
-    <div class="header">
-        <ModeSwitcher />
-    </div>
+  <header class="flex justify-between items-center space-x-4 p-4 mb-12 text-lg min-h-[72px]">
+    <Navigation />
+    <ModeSwitcher />
+  </header>
 </template>
-
-<style scoped>
-.header {
-    max-width: var(--page-max-width);
-    margin: 0 auto;
-    position: relative;
-}
-</style>
