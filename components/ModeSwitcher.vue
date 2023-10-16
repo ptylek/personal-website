@@ -1,17 +1,21 @@
 <template>
-  <ColorScheme>
-    <button @click="setMode" class="w-10 h-10 flex justify-center items-center" aria-label="Mode Switcher">
-        <nuxt-icon :name="colorMode.preference" class="text-dark dark:text-white" />
-    </button>
-  </ColorScheme>
+  <button @click="setMode" class="w-10 h-10 flex justify-center items-center" aria-label="Mode Switcher">
+    <Emoji :icon="emojiMap[colorMode.preference]" />
+  </button>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const colorMode = useColorMode()
 const setMode = () => {
-    const modes = ['light', 'dark'];
-    const index = modes.indexOf(colorMode.preference);
-    const next = (index + 1) % modes.length;
-    colorMode.preference = modes[next];
+  const modes = ['system', 'light', 'dark'];
+  const index = modes.indexOf(colorMode.preference);
+  const next = (index + 1) % modes.length;
+  colorMode.preference = modes[next];
+}
+
+const emojiMap: { [key: string]: string } = {
+  'system': '💻',
+  'light': '☀️',
+  'dark': '🌙'
 }
 </script>

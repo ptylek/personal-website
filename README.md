@@ -1,7 +1,9 @@
-# Personal website build with Nuxt
+# Personal website build with Nuxt 3
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-[Nuxt Content](https://content.nuxtjs.org) module acts as a file-based CMS for Nuxt application powered by Markdown and Vue components.
+[Nuxt Content](https://content.nuxtjs.org) module acts as a file-based CMS for Nuxt application powered by Markdown, Vue components.
+Website is implemented using Nuxt Content [Document Driven](https://content.nuxt.com/document-driven/introduction) mode and [Tailwind](https://tailwindcss.com/docs/installation).
+
 
 ## Setup
 
@@ -27,10 +29,8 @@ Generate output for static hosting
 yarn generate
 ```
 
-## Tools
+## Content Components
 
-Generate emoji font that only includes unicodes provided in emoji.js
+`:WavingHand` - 👋 with animation
 
-```bash
-yarn build:emoji
-```
+`:Emoji{icon="❤️"}` - use Noto Emoji .svg instead of regular emoji

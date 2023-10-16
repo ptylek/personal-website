@@ -5,12 +5,12 @@
       <ContentRenderer v-if="links" :value="links" class="text-lg md:text-xl md:flex-65 text-center md:text-left" />
     </div>
     <div class="text-center py-4">
-      Made with ❤️<br />Copyright {{ currentYear }} Paweł Tylek
+      Made with <Emoji icon="💜"/><br />Copyright {{ currentYear }} Paweł Tylek
     </div>
   </footer>
 </template>
 
 <script async setup lang="ts">
-const { data: links } = await useAsyncData('links-data', () => queryContent('/_footer-links').findOne());
-const currentYear = new Date().getFullYear();
+const { data: links } = await useAsyncData('links-data', () => queryContent('/_footer-links').findOne())
+const currentYear = new Date().getFullYear()
 </script>

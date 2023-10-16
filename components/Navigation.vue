@@ -7,10 +7,9 @@
       >
         <NuxtLink
           :to="link._path"
-          class="text-dark dark:text-white"
           :aria-label="`Go to ${link.navTitle || link.title}`"
         >
-          {{ link.icon }}
+          <Emoji :icon="link.icon"/>
           {{ link.navTitle || link.title }}
         </NuxtLink>
       </li>
