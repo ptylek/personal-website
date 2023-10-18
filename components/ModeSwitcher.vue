@@ -1,5 +1,5 @@
 <template>
-  <button @click="setMode" class="w-10 h-10 flex justify-center items-center" aria-label="Mode Switcher">
+  <button @click="setMode" class="w-10 h-10 flex justify-center items-center hover:text-purple transition-colors duration-300 ease-in-out" aria-label="Mode Switcher">
     <Emoji :icon="emojiMap[colorMode.preference]" />
   </button>
 </template>

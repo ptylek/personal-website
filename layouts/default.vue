@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-white dark:bg-dark text-dark dark:text-white z-10 mb-[518px] md:mb-[390px] min-h-screen">
+  <div class="relative bg-white dark:bg-dark text-dark dark:text-white z-10 mb-[518px] md:mb-[390px] min-h-screen transition-colors duration-300 ease-in-out">
     <Header />
     <div class="max-w-screen-md mx-auto px-5">
       <main class="pb-20 md:pb-6">
@@ -16,7 +16,7 @@
 .animate-float {
   animation-name: float;
   animation-duration: 3s;
-  animation-delay: 2.5s;
+  animation-delay: 3.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
