@@ -14,5 +14,5 @@
 
 /* Body */
 body {
-  font-family: 'Nunito';
+  font-family: 'Nunito', 'Nunito fallback';
 }
