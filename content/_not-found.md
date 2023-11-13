@@ -1,7 +1,10 @@
 ---
-title: 'Pawel Tylek Frontend Developer - Page not found'
+title: 'Not Found - Pawel Tylek - Frontend Developer'
+description: 'Not Found - Personal website of Paweł Tylek'
 ---
 
-[Oops 😟]{.font-bold .text-4xl .md:text-5xl .text-purple .mb-12}
+# Oops :UIcon{name='i-mdi-emoticon-sad-outline'}
 
-Page you are looking for was not found
+The page you were looking for doesn't exist!<br />
+You must have mistyped the address or the page may have moved.
+:UButton{label="Go to Home page" to="/" variant="soft" trailing-icon="i-mdi-arrow-right-circle-outline"}

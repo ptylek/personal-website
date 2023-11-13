@@ -1,4 +1,0 @@
-- [Contact on LinkedIn](https://www.linkedin.com/in/pawel-tylek/){.hover:underline}
-- [Follow on GitHub](https://github.com/ptylek){.hover:underline}
-- [Write me an email](mailto:admin@ptylek.com){.hover:underline}
-- [Check the certifications](https://www.credly.com/users/pawel-tylek/badges){.hover:underline}

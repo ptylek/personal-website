@@ -1,58 +1,50 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// @see https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    head: {
-      htmlAttrs: {
-        lang: 'en'
-      },
-      title: 'Frontend Developer Pawel Tylek - E-commerce and Headless Applications',
-      meta: [
-        { name: 'description', content: 'Welcome to the personal website of Pawel Tylek, an experienced Frontend Developer with a strong focus on e-commerce and headless applications.' },
-        { name: 'keywords', content: 'paweł tylek, pawel tylek, ptylek, frontend, front-end, nuxt, headless, ecommerce, javascript, magento, dev, developer, programista, kraków'},
-        { name: 'author', content: 'Paweł Tylek' },
-        { name: 'og:title', content: 'Frontend Developer Pawel Tylek - E-commerce and Headless Applications' },
-        { name: 'og:description', content: 'Welcome to the personal website of Pawel Tylek, an experienced Frontend Developer with a strong focus on e-commerce and headless applications.' },
-        { name: 'og:type', content: 'website' },
-        { name: 'og:image', content: '/images/og_image.jpg' },
-        { name: 'og:image:alt', content: 'Frontend Developer Pawel Tylek' },
-        { name: 'og:image:type', content: 'image/jpeg' },
-        { name: 'og:image:width', content: '2052' },
-        { name: 'og:image:height', content: '1282' }
-      ],
-      link: [
-        { rel: 'icon', href: '/favicon.png', type: 'image/png', sizes: '144x144' },
-        { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon', sizes: '48x48' },
-        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5740CE' },
-        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', type: 'image/png', sizes: '512x512' }
-      ]
-    }
+  devtools: { enabled: true },
+  experimental: {
+    viewTransition: true
   },
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/fontaine',
-    '@nuxtjs/robots',
-    '@nuxt/image',
-    '@nuxtjs/color-mode',
-    'nuxt-icons'
-  ],
+  typescript: {
+    typeCheck: true
+  },
   css: ['@/assets/css/global.css'],
   postcss: {
     plugins: {
+      'postcss-import': {},
+      'tailwindcss/nesting': {},
       tailwindcss: {},
       autoprefixer: {},
       ...(process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
     }
   },
-  colorMode: {
-    preference: 'light',
-    classSuffix: ''
-  },
+  modules: [
+    '@nuxt/content',
+    '@nuxt/ui',
+    '@nuxtjs/fontaine',
+    '@nuxt/image'
+  ],
   content: {
-    documentDriven: true,
+    /**
+     * contentHead disabled
+     * - overwrites useHead used in app.vue as it is runs on Nuxt page level
+     * - prevents from using title/description templates (also for og tags)
+     */
+    contentHead: false,
+    documentDriven: {
+      host: 'https://ptylek.com'
+    },
     markdown: {
       tags: {
-        p: 'Paragraph'
+        p: 'Paragraph',
+        ul: 'List'
       }
     }
+  },
+  ui: {
+    global: true,
+    icons: ['mdi']
+  },
+  colorMode: {
+    classSuffix: ''
   }
 })

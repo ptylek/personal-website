@@ -1,8 +1,3 @@
-/* Tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Font-Face */
 @font-face {
   font-family: 'Nunito';
@@ -10,9 +5,4 @@
   font-weight: 400;
   font-display: swap;
   src: local('Nunito'), url('/fonts/nunito-v26-latin-regular.woff2') format('woff2');
-}
-
-/* Body */
-body {
-  font-family: 'Nunito', 'Nunito fallback';
 }

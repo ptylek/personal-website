@@ -2,7 +2,7 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 [Nuxt Content](https://content.nuxtjs.org) module acts as a file-based CMS for Nuxt application powered by Markdown, Vue components.
-Website is implemented using Nuxt Content [Document Driven](https://content.nuxt.com/document-driven/introduction) mode and [Tailwind](https://tailwindcss.com/docs/installation).
+Website is implemented using Nuxt Content [Document Driven](https://content.nuxt.com/document-driven/introduction) mode, [Nuxt UI](https://ui.nuxt.com) and [Tailwind](https://tailwindcss.com/docs/installation).
 
 
 ## Setup
@@ -10,7 +10,7 @@ Website is implemented using Nuxt Content [Document Driven](https://content.nuxt
 Make sure to install the dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Development Server
@@ -18,7 +18,7 @@ yarn install
 Start the development server on http://localhost:3000
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 ## Production
@@ -26,11 +26,11 @@ yarn dev
 Generate output for static hosting
 
 ```bash
-yarn generate
+npm run generate
 ```
 
 ## Content Components
 
 `:WavingHand` - 👋 with animation
 
-`:Emoji{icon="❤️"}` - use Noto Emoji .svg instead of regular emoji
+`:UIcon{name="i-mdi-language-javascript"}` - use [MDI icon](https://icones.js.org/collection/mdi)

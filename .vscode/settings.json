@@ -1,0 +1,14 @@
+// @see https://ui.nuxt.com/getting-started/installation#intellisense
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.experimental.configFile": "tailwind.config.ts",
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className"
+  ]
+}

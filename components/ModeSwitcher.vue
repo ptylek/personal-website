@@ -1,21 +1,34 @@
 <template>
-  <button @click="setMode" class="w-10 h-10 flex justify-center items-center hover:text-purple transition-colors duration-300 ease-in-out" aria-label="Mode Switcher">
-    <Emoji :icon="emojiMap[colorMode.preference]" />
-  </button>
+  <ClientOnly>
+    <UButton
+      :icon="isDark ? 'i-mdi-weather-night' : 'i-mdi-weather-sunny'"
+      size="sm"
+      color="gray"
+      variant="ghost"
+      aria-label="Theme"
+      @click="handleClick"
+    />
+    <template #fallback>
+      <div class="w-8 h-8" />
+    </template>
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">
+const emit = defineEmits<{
+  (event: 'mode-switched'): void
+}>()
 const colorMode = useColorMode()
-const setMode = () => {
-  const modes = ['system', 'light', 'dark'];
-  const index = modes.indexOf(colorMode.preference);
-  const next = (index + 1) % modes.length;
-  colorMode.preference = modes[next];
-}
-
-const emojiMap: { [key: string]: string } = {
-  'system': '💻',
-  'light': '☀️',
-  'dark': '🌙'
+const isDark = computed({
+  get () {
+    return colorMode.value === 'dark'
+  },
+  set () {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  }
+})
+const handleClick = () => {
+  isDark.value = !isDark.value
+  emit('mode-switched')
 }
 </script>
