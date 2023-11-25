@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between items-center p-4 bg-indigo-100 dark:bg-indigo-950 shadow-md">
+  <header class="fixed top-0 w-full z-10 flex justify-between items-center p-4 bg-indigo-100 dark:bg-indigo-950 shadow-md">
     <Logo class="md:hidden" />
     <Navigation class="max-md:hidden" />
     <div class="hidden md:flex">

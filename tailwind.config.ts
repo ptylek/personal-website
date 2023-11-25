@@ -30,7 +30,9 @@ export default <Partial<Config>> {
         'waving-hand': 'wave 2.5s 2.5s infinite'
       },
       minHeight: {
-        'screen-svh': '100svh'
+        'screen-16': 'calc(100vh - 4rem)',
+        'screen-svh': '100svh',
+        'screen-svh-16': 'calc(100svh - 4rem)'
       }
     }
   },

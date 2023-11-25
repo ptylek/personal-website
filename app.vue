@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-screen min-h-screen-svh text-black dark:text-white bg-white dark:bg-zinc-900 transition-colors duration-300 ease-in-out">
+  <div class="flex flex-col min-h-screen-16 min-h-screen-svh-16">
     <Header />
     <main class="w-full max-w-screen-lg mx-auto px-4 py-4 md:py-10 grow">
       <NuxtPage />
@@ -24,9 +24,9 @@ watch(() => page.value, () => {
 // Server side rendered head tags
 useServerHead({
   title: title.value,
-  htmlAttrs: { lang: 'en' },
+  htmlAttrs: { lang: 'en', class: 'mt-16' },
   bodyAttrs: {
-    class: 'font-nunito'
+    class: 'font-nunito text-black dark:text-white transition-colors duration-300 ease-in-out bg-white dark:bg-zinc-900'
   },
   meta: [
     // default
