@@ -16,7 +16,6 @@ withDefaults(defineProps<{
   alt?: string
   loading?: boolean
 }>(), {
-  alt: undefined,
   loading: true
 })
 </script>

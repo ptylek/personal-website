@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col min-h-screen-16 min-h-screen-svh-16">
     <Header />
-    <main class="w-full max-w-screen-lg mx-auto px-4 py-4 md:py-10 grow">
+    <main class="w-full max-w-screen-lg mx-auto px-4 pt-4 pb-12 md:pt-10 grow">
       <NuxtPage />
     </main>
     <Footer />

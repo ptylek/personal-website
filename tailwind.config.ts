@@ -14,6 +14,9 @@ export default <Partial<Config>> {
       nunito: ['Nunito', 'Nunito fallback']
     },
     extend: {
+      fontSize: {
+        'parent': 'inherit'
+      },
       keyframes: {
         'wave': {
           '0%': { transform: 'rotate(0deg)' },

@@ -36,7 +36,8 @@ export default defineNuxtConfig({
     markdown: {
       tags: {
         p: 'Paragraph',
-        ul: 'List'
+        ul: 'List',
+        li: 'ListItem'
       }
     }
   },

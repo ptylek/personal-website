@@ -12,15 +12,15 @@ Seems like nowadays it's still easier to have a personal website than print your
 I created this website using Nuxt and its static site generation (SSG) with Nuxt Content module. Mostly I wanted to play around with document/file driven content - this kind of CMS would make creating websites for business much easier as there wouldn't be a need for WordPress.
 
 Current tech stack:
-- :UButton{to="https://nuxt.com" target="_blank" label="Nuxt 3.8.1 with TypeScript" :padded="false" variant="link"}
-- :UButton{to="https://content.nuxt.com" target="_blank" label="Nuxt Content" :padded="false" variant="link"}
-- :UButton{to="https://ui.nuxt.com" target="_blank" label="Nuxt UI" :padded="false" variant="link"}
+- :UrlLink{to="https://nuxt.com" label="Nuxt 3.8.1 with TypeScript"}
+- :UrlLink{to="https://content.nuxt.com" label="Nuxt Content"}
+- :UrlLink{to="https://ui.nuxt.com" label="Nuxt UI"}
 
 Additional modules used:
-- :UButton{to="https://image.nuxt.com" target="_blank" label="Nuxt Image" :padded="false" variant="link"}
-- :UButton{to="https://nuxt.com/modules/fontaine" target="_blank" label="Nuxt Fontaine" :padded="false" variant="link"}
-- :UButton{to="https://color-mode.nuxtjs.org" target="_blank" label="Nuxt Color Mode" :padded="false" variant="link"}
-- :UButton{to="https://devtools.nuxt.com/" target="_blank" label="Nuxt DevTools" :padded="false" variant="link"}
+- :UrlLink{to="https://image.nuxt.com" label="Nuxt Image"}
+- :UrlLink{to="https://nuxt.com/modules/fontaine" label="Nuxt Fontaine"}
+- :UrlLink{to="https://color-mode.nuxtjs.org" label="Nuxt Color Mode"}
+- :UrlLink{to="https://devtools.nuxt.com/" label="Nuxt DevTools"}
 
 ## :UIcon{name="i-mdi-palette"} Design
 
@@ -51,8 +51,8 @@ Website development history can be accessed via commits in GitHub repository.
 ## :UIcon{name="i-mdi-counter"} Result
 
 Even though it's just a static page, I think it's always good to run the Lighthouse. And it gives room for improvements like
-- :UButton{to="https://nuxt.com/modules/fontaine" target="_blank" label="Nuxt Fontaine" :padded="false" variant="link"} to fight CLS on the webpage when custom font is loading
-- :UButton{to="https://unhead.unjs.io/usage/composables/use-server-head" target="_blank" label="useServerHead" :padded="false" variant="link"} for head attributes which don't have to be run client side
-- background:text ratio gave me different results in :UButton{to="https://pagespeed.web.dev/" target="_blank" label="PageSpeed Insights" :padded="false" variant="link"} than local lighthouse test, so make sure to run it there too!
+- :UrlLink{to="https://nuxt.com/modules/fontaine" label="Nuxt Fontaine"} to fight CLS on the webpage when custom font is loading
+- :UrlLink{to="https://unhead.unjs.io/usage/composables/use-server-head" label="useServerHead"} for head attributes which don't have to be run client side
+- background:text ratio gave me different results in :UrlLink{to="https://pagespeed.web.dev/" label="PageSpeed Insights"} than local lighthouse test, so make sure to run it there too!
 
 :Image{src="/images/blog/hello/performance.png" label="Performance"}

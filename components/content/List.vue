@@ -3,11 +3,3 @@
     <slot />
   </ul>
 </template>
-
-<style>
-.list > li {
-  @apply p-4;
-  @apply -mb-px;
-  @apply border;
-}
-</style>
