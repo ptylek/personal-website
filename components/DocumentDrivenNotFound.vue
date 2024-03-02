@@ -5,7 +5,7 @@
   />
 </template>
 
-<script async setup lang="ts">
+<script setup async lang="ts">
 const { data: error } = await useAsyncData('error-data', () => queryContent('/_not-found').findOne())
 
 if (error.value) {

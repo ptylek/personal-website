@@ -7,6 +7,12 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true
   },
+  // BUG: nuxt/content (https://github.com/nuxt/content/issues/2062)
+  // _not-found query api is not generated during npm run generate as the route is not prerendered
+  // adding this route with queryContent _not-found makes sure it is generated properly
+  generate: {
+    routes: '/not-found'
+  },
   css: ['@/assets/css/global.css'],
   postcss: {
     plugins: {

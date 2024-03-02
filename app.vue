@@ -21,8 +21,8 @@ watch(() => page.value, () => {
   })
 })
 
-// Server side rendered head tags
-useServerHead({
+// Head tags
+useHead({
   title: title.value,
   htmlAttrs: { lang: 'en', class: 'mt-16' },
   bodyAttrs: {

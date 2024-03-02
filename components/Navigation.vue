@@ -3,7 +3,7 @@
     <ContentNavigation v-slot="{ navigation }">
       <ul class="flex flex-col md:flex-row items-end md:items-center gap-2">
         <li
-          v-for="link of navigation"
+          v-for="link of navigation.filter(link => link._path !== '/not-found')"
           :key="link._path"
         >
           <Logo v-if="link._path === '/'" />
