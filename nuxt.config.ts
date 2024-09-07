@@ -43,7 +43,8 @@ export default defineNuxtConfig({
       tags: {
         p: 'Paragraph',
         ul: 'List',
-        li: 'ListItem'
+        li: 'ListItem',
+        code: 'Code'
       }
     }
   },

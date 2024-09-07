@@ -11,7 +11,7 @@
 <script setup lang="ts">
 const { page } = useContent()
 const title = computed(() => page.value?.title ? `${page.value?.title} - Pawel Tylek - Frontend Developer` : 'Pawel Tylek - Frontend Developer')
-const description = computed(() => page.value?.description ? `${page.value?.description} - Personal website of Paweł Tylek` : 'Personal website of Paweł Tylek')
+const description = computed(() => page.value?.description ? page.value?.description : 'Personal website of Paweł Tylek')
 
 // Dynamically set title and description on page change
 watch(() => page.value, () => {

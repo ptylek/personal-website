@@ -14,7 +14,12 @@ useHead({
 })
 const { page } = useContent()
 const route = useRoute()
-const date = new Date(page.value.date).toDateString()
+const date = new Date(page.value.date).toLocaleDateString('en-UK', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+})
 const links = page.value?.body?.toc?.links?.map((link: { id: string, depth: number, text: string }) => {
   return {
     label: link.text,

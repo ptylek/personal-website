@@ -8,8 +8,8 @@
           :key="article._path"
         >
           <template #header>
-            <h2 class="m-0 p-0">{{ article.title }}</h2>
-            <small class="text-xs">{{ new Date(article.date).toDateString() }}</small>
+            <NuxtLink :to="article._path"><h2 class="m-0 p-0">{{ article.title }}</h2></NuxtLink>
+            <small class="text-xs">{{ new Date(article.date).toLocaleDateString('en-UK') }}</small>
           </template>
           <p 
             v-if="article?.excerpt?.children?.[0]?.children?.[0]?.value"
